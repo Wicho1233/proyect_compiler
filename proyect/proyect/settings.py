@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1:5173',
+    'proyect-compiler.onrender.com'
     #'compilador-o2bk.onrender.com'
     # Añade aquí el dominio de tu frontend si lo tienes
 ]
@@ -60,6 +61,9 @@ MIDDLEWARE = [
 # Cuando CORS_ALLOW_ALL_ORIGINS es True, la lista CORS_ALLOWED_ORIGINS es ignorada.
 # Opcional: si quieres permitir todos los orígenes (no recomendado para producción)
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ORIGINS= [
+    'https://proyect-compiler-git-main-wicho1233s-projects.vercel.app'
+    ]
 
 ROOT_URLCONF = 'proyect.urls'
 
